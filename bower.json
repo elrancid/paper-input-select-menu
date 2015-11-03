@@ -1,24 +1,27 @@
 {
-  "name": "paper-menu",
+  "name": "paper-input-select-menu",
   "version": "1.1.1",
   "description": "Implements an accessible material design menu",
-  "authors": "The Polymer Authors",
+  "authors": [
+    "The Polymer Authors",
+    "Davide Zeffiro <elrancid@gmail.com>"
+  ],
   "keywords": [
     "web-components",
     "polymer",
     "menu"
   ],
   "main": [
-    "paper-menu.html",
-    "paper-submenu.html"
+    "paper-input-select-menu.html",
+    "paper-input-select-submenu.html"
   ],
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/PolymerElements/paper-menu"
+    "url": "git://github.com/elrancid/paper-input-select-menu"
   },
   "license": "http://polymer.github.io/LICENSE.txt",
-  "homepage": "https://github.com/PolymerElements/paper-menu",
+  "homepage": "https://github.com/elrancid/paper-input-select-menu",
   "ignore": [],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.1.0",
