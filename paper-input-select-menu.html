@@ -9,9 +9,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 -->
 
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../iron-menu-behavior/iron-menu-behavior.html">
+<!--<link rel="import" href="../iron-menu-behavior/iron-menu-behavior.html">-->
 <link rel="import" href="../paper-styles/paper-styles.html">
-<link rel="import" href="paper-menu-shared-styles.html">
+<!--<link rel="import" href="paper-menu-shared-styles.html">-->
+
+<link rel="import" href="../iron-input-select-menu-behavior/iron-input-select-menu-behavior.html">
+<link rel="import" href="paper-input-select-menu-shared-styles.html">
 
 <!--
 paper-input-select
@@ -75,18 +78,18 @@ of a menu item will also focus it.
 @demo demo/index.html
 -->
 
-<dom-module id="paper-menu">
+<dom-module id="paper-input-select-menu">
   <template>
-    <style include="paper-menu-shared-styles"></style>
+    <style include="paper-input-select-menu-shared-styles"></style>
     <style>
       :host {
         display: block;
         padding: 8px 0;
 
-        background: var(--paper-menu-background-color, --primary-background-color);
-        color: var(--paper-menu-color, --primary-text-color);
+        background: var(--paper-input-select-menu-background-color, --primary-background-color);
+        color: var(--paper-input-select-menu-color, --primary-text-color);
 
-        @apply(--paper-menu);
+        @apply(--paper-input-select-menu);
       }
     </style>
 
@@ -98,10 +101,10 @@ of a menu item will also focus it.
   <script>
     (function() {
       Polymer({
-        is: 'paper-menu',
+        is: 'paper-input-select-menu',
 
         behaviors: [
-          Polymer.IronMenuBehavior
+          Polymer.IronInputSelectMenuBehavior
         ]
       });
     })();
